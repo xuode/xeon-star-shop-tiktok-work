@@ -793,14 +793,14 @@ async def games_menu(callback: CallbackQuery):
 
     used = row["attempts"] if row else 0
 
-    text = (
-        f'{em("game", f"{em('game')}")} <b>АРЕНА ИГР</b>\n'
-        f'{em("star")} Испытай удачу и найди счастливый подарок!\n\n'
-        f'{em("star")} <b>Награда за победу:</b> +{GAME_WIN_REWARD} игровых очков\n'
-        f'{em("game")} <b>Поле:</b> 3 × 3\n'
-        f'{em("star")} <b>Попытки сегодня:</b> {DAILY_GAME_LIMIT - used}/{DAILY_GAME_LIMIT}\n\n'
-        f'{em("right")} <i>Выбирай игру и попробуй победить!</i>'
-    )
+text = (
+    f'{em("game")} <b>АРЕНА ИГР</b>\n'
+    f'{em("star")} Испытай удачу и найди счастливый подарок!\n\n'
+    f'{em("star")} <b>Награда за победу:</b> +{GAME_WIN_REWARD} игровых очков\n'
+    f'{em("game")} <b>Поле:</b> 3 × 3\n'
+    f'{em("star")} <b>Попытки сегодня:</b> {DAILY_GAME_LIMIT - used}/{DAILY_GAME_LIMIT}\n\n'
+    f'{em("right")} <i>Выбирай игру и попробуй победить!</i>'
+)
 
     keyboard = InlineKeyboardMarkup(inline_keyboard=[
         [InlineKeyboardButton(
