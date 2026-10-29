@@ -6,7 +6,7 @@
 data/
 *.sqlite3
 *.sqlite3-wal
-*.sqlite3-shm
+*stars.db
 
 # Python
 __pycache__/
